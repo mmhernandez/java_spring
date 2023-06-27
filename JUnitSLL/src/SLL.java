@@ -19,6 +19,10 @@ public class SLL {
 		if(this.head == null) {			
 			this.head = newNode;
 		} else {
+			Node runner = this.head.next;
+			
+			
+			
 			System.out.println("pass");
 		}
 	}
