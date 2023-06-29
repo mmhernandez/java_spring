@@ -10,11 +10,7 @@ class TestSLL {
 	@BeforeEach
 	void setUp() throws Exception {
 	}
-
-//	@Test
-//	void test() {
-//		fail("Not yet implemented");
-//	}
+	
 	
 	@Test
 	public void testHeadForNull() {
@@ -32,6 +28,12 @@ class TestSLL {
 		sll.add(5);
 		sll.add(10);
 		assertTrue(sll.head.next.value == 10);
+	}
+	
+	@Test
+	public void testHeadAfterRemove() {
+		sll.add(10);
+		sll.removeFront();
 	}
 
 }

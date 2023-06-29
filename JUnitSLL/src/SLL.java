@@ -2,13 +2,11 @@
 public class SLL {
 	
 	public Node head;
-	public Node next;
 	
 	
 //	CONSTRUCTOR
-	public SLL(Node head, Node next) {
+	public SLL() {
 		this.head = null;
-		this.next = null;
 	}
 	
 	
@@ -19,11 +17,11 @@ public class SLL {
 		if(this.head == null) {			
 			this.head = newNode;
 		} else {
-			Node runner = this.head.next;
-			
-			
-			
-			System.out.println("pass");
+			Node runner = this.head;
+			while(runner.next != null) {
+				runner = runner.next;
+			}
+			runner.next = newNode;
 		}
 	}
 
