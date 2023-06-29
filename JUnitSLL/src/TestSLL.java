@@ -34,6 +34,7 @@ class TestSLL {
 	public void testHeadAfterRemove() {
 		sll.add(10);
 		sll.removeFront();
+		assertNull(sll.head.value);
 	}
 
 }

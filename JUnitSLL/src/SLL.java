@@ -24,5 +24,17 @@ public class SLL {
 			runner.next = newNode;
 		}
 	}
+	
+	public void removeFront() {
+		//proceed if SLL is not empty
+		if(this.head != null) {
+			Node runner = this.head;
+			if(runner.next != null) {
+				this.head = runner.next;
+			} else {
+				this.head = null;
+			}
+		}
+	}
 
 }
